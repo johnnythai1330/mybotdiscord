@@ -15,14 +15,14 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    channel = bot.get_channel(1140633489520205934)
-    text = f"Welcome to the server, {member.mention}!"
+    channel = bot.get_channel(1298256171890901134)
+    text = f"{member.mention} Are you new here!"
     await channel.send(text)
 
 @bot.event
 async def on_member_remove(member):
-    channel = bot.get_channel(1140633489520205934)
-    text = f"{member.name} has left the server!"
+    channel = bot.get_channel(1298256171890901134)
+    text = f"{member.name} I hope you come back hehe"
     await channel.send(text)
 
 server_on()
