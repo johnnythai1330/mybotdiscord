@@ -8,8 +8,10 @@ bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
+    custom_status = "I love you!"
+    await bot.change_presence(status=discord.Status.online, activity=discord.CustomActivity(name=custom_status))
+
     print("Bot Online!")
-    print("555")
     synced = await bot.tree.sync()
     print(f"{len(synced)} command(s)")
 
