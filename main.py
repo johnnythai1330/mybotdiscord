@@ -25,7 +25,7 @@ async def on_member_remove(member):
     text = f"{member.name} I hope you come back hehe"
     await channel.send(text)
 
-TARGET_CHANNEL_ID = 123456789012345678
+TARGET_CHANNEL_ID = 1311277025708998687
 
 class QuizModal(discord.ui.Modal, title="verification"):
     """ Modal ที่มี 3 คำถามในป๊อปอัปเดียว """
