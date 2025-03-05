@@ -65,7 +65,7 @@ class QuizSelect(discord.ui.View):
         ]
     )
     async def select_callback(self, interaction: discord.Interaction, select: discord.ui.Select):
-        if select.values[0] == "verification":
+        if select.values[0] == "verification!":
             await interaction.response.send_modal(QuizModal(interaction.user.id))
 
 @bot.command()
